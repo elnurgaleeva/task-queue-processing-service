@@ -16,6 +16,7 @@ locust -f task_queue_processing_locust_file.py --logfile log --step-load --maste
 locust -f task_queue_processing_locust_file.py --logfile log --slave& (this line should be repeated per each processor core)
 
 --logfile - optional parameter if log should go to specified file. If not set, log will go to stdout/stderr.
+
 --step-load - optional parameter if stepping load profile is selected. Allows to monitor service performance with different user load and probe the max RPS that can be achieved.
 
 4. Once test has started, open Web UI on http://localhost:8089 (if you are running Locust locally).
