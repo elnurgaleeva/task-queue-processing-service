@@ -13,6 +13,7 @@ Steps to run test:
 Command to run test:
 
 locust -f task_queue_processing_locust_file.py --logfile log --step-load --master&
+
 locust -f task_queue_processing_locust_file.py --logfile log --slave& (this line should be repeated per each processor core)
 
 --logfile - optional parameter if log should go to specified file. If not set, log will go to stdout/stderr.
